@@ -1,0 +1,9 @@
+; for 16-bit app support
+[fonts]
+[extensions]
+[mci extensions]
+[files]
+[Mail]
+MAPI=1
+[ESIWIN INSTALL]
+AEX_DB_LINE=esi32aex C:\PROGRA~1\Bosch\ESITRO~1\Data\ESI32AEX localhost 3 99 99:99 0 0
