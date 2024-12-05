@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zgłoś Samochód - Torque Town 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <img src="img/logo-placeholder.webp" alt="Logo Wydarzenia Torque Town 2025" class="logo">
+        <h1>Torque Town 2025 - Zgłoś Samochód</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="karta">Strona Główna</a></li>
+                <li><a href="konkurencje.html" class="karta">Konkurencje</a></li>
+                <li><a href="galeria.html" class="karta">Galeria</a></li>
+                <li><a href="nagrody.html" class="karta">Nagrody</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="formularz">
+    <h2>Zgłoś swój samochód</h2>
+    <form action="form-handler.php" method="POST" enctype="multipart/form-data">
+        <label for="imie">Imię i nazwisko:</label>
+        <input type="text" id="imie" name="imie" required>
+
+        <label for="model">Model samochodu:</label>
+        <input type="text" id="model" name="model" required>
+
+        <label for="opis">Opis modyfikacji:</label>
+        <textarea id="opis" name="opis" rows="4" required></textarea>
+
+        <label for="email">Twój e-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="zdjecia">Załaduj zdjęcia (max 5):</label>
+        <input type="file" id="zdjecia" name="zdjecia[]" accept="image/*" multiple required>
+
+        <button type="submit">Wyślij zgłoszenie</button>
+    </form>
+</section>
+    </main>
+
+    <footer>
+        <p>&copy; Torque Town 2025. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>

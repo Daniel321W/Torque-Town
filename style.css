@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('img/background-placeholder.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+header h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    z-index: 10;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #ff5733;
+    transform: scale(1.1);
+}
+
+nav ul li a:active {
+    background-color: #d43f00;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    background: white;
+    margin: 10px auto;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.karta {
+    display: inline-block;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.karta:hover {
+    background-color: #ff5733;
+    transform: scale(1.1);
+}
+
+.karta:active {
+    background-color: #d43f00;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.galeria img {
+    width: 30%;
+    margin: 5px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background-color: #ff5733;
+    transform: scale(1.1);
+}
+
+form button:active {
+    background-color: #d43f00;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .galeria img {
+        width: 48%;
+    }
+
+    nav ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .karta {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+.nagrody-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+}
+
+.nagrody-gallery img {
+    width: 100%; /* Zajmują pełną szerokość dostępnego miejsca */
+    max-width: 300px; /* Maksymalna szerokość */
+    height: auto; /* Utrzymuje proporcje */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.nagrody-gallery a {
+    text-decoration: none;
+}
