@@ -44,7 +44,7 @@ nav ul li {
 nav ul li a {
     display: block;
     padding: 15px 30px;
-    background-color: #333;
+    background-color: #222; /* Ciemniejszy kolor */
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -54,12 +54,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #ff5733;
+    background-color: #333; /* Lżejszy ciemny odcień */
     transform: scale(1.1);
 }
 
 nav ul li a:active {
-    background-color: #d43f00;
+    background-color: #111; /* Jeszcze ciemniejszy odcień */
 }
 
 main {
@@ -88,12 +88,12 @@ section {
 }
 
 .karta:hover {
-    background-color: #ff5733;
+    background-color: #555; /* Ciemny szary */
     transform: scale(1.1);
 }
 
 .karta:active {
-    background-color: #d43f00;
+    background-color: #444; /* Jeszcze ciemniejszy szary */
 }
 
 .galeria {
@@ -131,7 +131,7 @@ form input {
 
 form button {
     padding: 15px;
-    background-color: #333;
+    background-color: #222; /* Ciemny przycisk */
     color: white;
     border: none;
     border-radius: 8px;
@@ -142,12 +142,12 @@ form button {
 }
 
 form button:hover {
-    background-color: #ff5733;
+    background-color: #333; /* Lżejszy ciemny odcień */
     transform: scale(1.1);
 }
 
 form button:active {
-    background-color: #d43f00;
+    background-color: #111; /* Jeszcze ciemniejszy odcień */
 }
 
 footer {
